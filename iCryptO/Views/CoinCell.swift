@@ -10,6 +10,7 @@ import UIKit
 class CoinCell: UITableViewCell {
     
     static let identifier = "CoinCell"
+    var onImageLoaded: ((UIImage?)-> Void)?
     
     // MARK: - Variables
     private(set) var coin: Coin!
@@ -22,7 +23,6 @@ class CoinCell: UITableViewCell {
         image.image = UIImage(systemName: "questionmark")
         image.translatesAutoresizingMaskIntoConstraints = false
         image.tintColor = .black
-        image.backgroundColor = .systemBlue
         return image
     }()
     
@@ -48,8 +48,14 @@ class CoinCell: UITableViewCell {
     
     public func configure(with coin: Coin) {
         self.coin = coin
-        
         self.coinName.text = coin.name
+                
+        let imageData = try? Data(contentsOf: self.coin.logoURL!)
+        if let imageData = imageData {
+            DispatchQueue.main.async { [weak self] in
+                self?.coinLogo.image = UIImage(data: imageData)
+            }
+        }
     }
     
     // MARK: - UISetUP

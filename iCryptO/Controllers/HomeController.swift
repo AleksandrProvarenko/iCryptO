@@ -68,7 +68,8 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.deselectRow(at: indexPath, animated: true)
         
         let coin = self.coins[indexPath.row]
-        let vc = ViewCryptoController(coin)
+        let viewModel = ViewCryptoControllerViewModel(coin: coin)
+        let vc = ViewCryptoController(viewModel)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

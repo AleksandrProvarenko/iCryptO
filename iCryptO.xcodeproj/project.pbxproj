@@ -16,6 +16,7 @@
 		0B49A47629E55D9300C2C595 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47529E55D9300C2C595 /* Coin.swift */; };
 		0B49A47829E562A900C2C595 /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47729E562A900C2C595 /* CoinCell.swift */; };
 		0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47929E5736000C2C595 /* ViewCryptoController.swift */; };
+		0BDF3FF329E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF3FF229E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0B49A47529E55D9300C2C595 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		0B49A47729E562A900C2C595 /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		0B49A47929E5736000C2C595 /* ViewCryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoController.swift; sourceTree = "<group>"; };
+		0BDF3FF229E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		0B49A46D29E54D4E00C2C595 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0BDF3FF229E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				0B49A47829E562A900C2C595 /* CoinCell.swift in Sources */,
 				0B49A45E29E5477400C2C595 /* HomeController.swift in Sources */,
+				0BDF3FF329E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift in Sources */,
 				0B49A45A29E5477400C2C595 /* AppDelegate.swift in Sources */,
 				0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */,
 				0B49A45C29E5477400C2C595 /* SceneDelegate.swift in Sources */,

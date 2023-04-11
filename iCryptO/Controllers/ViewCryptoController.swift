@@ -10,7 +10,7 @@ import UIKit
 class ViewCryptoController: UIViewController {
     
     // MARK: - Variables
-    private let coin: Coin
+    let viewModel: ViewCryptoControllerViewModel
     
     // MARK: - UIComponents
     private let scrollView: UIScrollView = {
@@ -85,8 +85,8 @@ class ViewCryptoController: UIViewController {
     }()
     
     // MARK: - LifeCycle
-    init(_ coin: Coin) {
-        self.coin = coin
+    init(_ viewModel: ViewCryptoControllerViewModel) {
+        self.viewModel = viewModel
         super .init(nibName: nil, bundle: nil)
     }
     
@@ -97,11 +97,17 @@ class ViewCryptoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationItem.title = coin.name
-        rankLabel.text = self.coin.cmc_rank.description
-        priceLabel.text = self.coin.quote.CAD.price.description
-        marketCapLabel.text = self.coin.quote.CAD.market_kap.description
-        maxSupplyLabel.text = self.coin.max_suplply?.description
+        navigationItem.title = viewModel.coin.name
+        rankLabel.text = viewModel.rankLabel
+        priceLabel.text = viewModel.priceLabel
+        marketCapLabel.text = viewModel.marketCapLabel
+        maxSupplyLabel.text = viewModel.maxSupplyLabel
+        
+        self.viewModel.onImageLoaded = { [weak self] logoImage in
+            DispatchQueue.main.async {
+                self?.coinLogo.image = logoImage
+            }
+        }
         
         navBar()
         setupUI()
@@ -140,6 +146,7 @@ class ViewCryptoController: UIViewController {
             coinLogo.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
             coinLogo.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             coinLogo.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            coinLogo.heightAnchor.constraint(equalToConstant: 200),
             
             vStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             vStack.topAnchor.constraint(equalTo: coinLogo.bottomAnchor, constant: 20),
