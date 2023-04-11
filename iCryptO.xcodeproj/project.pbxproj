@@ -14,7 +14,7 @@
 		0B49A46629E5477500C2C595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B49A46429E5477500C2C595 /* LaunchScreen.storyboard */; };
 		0B49A47429E54ED500C2C595 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47329E54ED500C2C595 /* Constants.swift */; };
 		0B49A47629E55D9300C2C595 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47529E55D9300C2C595 /* Coin.swift */; };
-		0B49A47829E562A900C2C595 /* ConiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47729E562A900C2C595 /* ConiCell.swift */; };
+		0B49A47829E562A900C2C595 /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47729E562A900C2C595 /* CoinCell.swift */; };
 		0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47929E5736000C2C595 /* ViewCryptoController.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		0B49A46729E5477500C2C595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B49A47329E54ED500C2C595 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B49A47529E55D9300C2C595 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		0B49A47729E562A900C2C595 /* ConiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConiCell.swift; sourceTree = "<group>"; };
+		0B49A47729E562A900C2C595 /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		0B49A47929E5736000C2C595 /* ViewCryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +83,7 @@
 		0B49A46E29E54D6400C2C595 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0B49A47729E562A900C2C595 /* ConiCell.swift */,
+				0B49A47729E562A900C2C595 /* CoinCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B49A47829E562A900C2C595 /* ConiCell.swift in Sources */,
+				0B49A47829E562A900C2C595 /* CoinCell.swift in Sources */,
 				0B49A45E29E5477400C2C595 /* HomeController.swift in Sources */,
 				0B49A45A29E5477400C2C595 /* AppDelegate.swift in Sources */,
 				0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */,

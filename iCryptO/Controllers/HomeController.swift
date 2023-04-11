@@ -66,5 +66,9 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
+        
+        let coin = self.coins[indexPath.row]
+        let vc = ViewCryptoController(coin)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ConiCell.swift
+//  CoinCell.swift
 //  iCryptO
 //
 //  Created by Alex Provarenko on 11.04.2023.
