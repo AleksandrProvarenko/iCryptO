@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		0B49A45A29E5477400C2C595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A45929E5477400C2C595 /* AppDelegate.swift */; };
 		0B49A45C29E5477400C2C595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A45B29E5477400C2C595 /* SceneDelegate.swift */; };
-		0B49A45E29E5477400C2C595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A45D29E5477400C2C595 /* ViewController.swift */; };
+		0B49A45E29E5477400C2C595 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A45D29E5477400C2C595 /* HomeController.swift */; };
 		0B49A46329E5477500C2C595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B49A46229E5477500C2C595 /* Assets.xcassets */; };
 		0B49A46629E5477500C2C595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B49A46429E5477500C2C595 /* LaunchScreen.storyboard */; };
+		0B49A47429E54ED500C2C595 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47329E54ED500C2C595 /* Constants.swift */; };
+		0B49A47629E55D9300C2C595 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47529E55D9300C2C595 /* Coin.swift */; };
+		0B49A47829E562A900C2C595 /* ConiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47729E562A900C2C595 /* ConiCell.swift */; };
+		0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47929E5736000C2C595 /* ViewCryptoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B49A45629E5477400C2C595 /* iCryptO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCryptO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B49A45929E5477400C2C595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B49A45B29E5477400C2C595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B49A45D29E5477400C2C595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B49A45D29E5477400C2C595 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		0B49A46229E5477500C2C595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B49A46529E5477500C2C595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B49A46729E5477500C2C595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B49A47329E54ED500C2C595 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0B49A47529E55D9300C2C595 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		0B49A47729E562A900C2C595 /* ConiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConiCell.swift; sourceTree = "<group>"; };
+		0B49A47929E5736000C2C595 /* ViewCryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,66 @@
 		0B49A45829E5477400C2C595 /* iCryptO */ = {
 			isa = PBXGroup;
 			children = (
-				0B49A45929E5477400C2C595 /* AppDelegate.swift */,
-				0B49A45B29E5477400C2C595 /* SceneDelegate.swift */,
-				0B49A45D29E5477400C2C595 /* ViewController.swift */,
-				0B49A46229E5477500C2C595 /* Assets.xcassets */,
-				0B49A46429E5477500C2C595 /* LaunchScreen.storyboard */,
+				0B49A47229E54DE700C2C595 /* API */,
+				0B49A46F29E54D7000C2C595 /* Models */,
+				0B49A46E29E54D6400C2C595 /* Views */,
+				0B49A46D29E54D4E00C2C595 /* ViewModels */,
+				0B49A47129E54DC400C2C595 /* Controllers */,
+				0B49A47029E54DAC00C2C595 /* Supporting */,
 				0B49A46729E5477500C2C595 /* Info.plist */,
 			);
 			path = iCryptO;
+			sourceTree = "<group>";
+		};
+		0B49A46D29E54D4E00C2C595 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0B49A46E29E54D6400C2C595 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B49A47729E562A900C2C595 /* ConiCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B49A46F29E54D7000C2C595 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B49A47529E55D9300C2C595 /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B49A47029E54DAC00C2C595 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0B49A46229E5477500C2C595 /* Assets.xcassets */,
+				0B49A46429E5477500C2C595 /* LaunchScreen.storyboard */,
+				0B49A45929E5477400C2C595 /* AppDelegate.swift */,
+				0B49A45B29E5477400C2C595 /* SceneDelegate.swift */,
+				0B49A47329E54ED500C2C595 /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		0B49A47129E54DC400C2C595 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B49A45D29E5477400C2C595 /* HomeController.swift */,
+				0B49A47929E5736000C2C595 /* ViewCryptoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B49A47229E54DE700C2C595 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B49A45E29E5477400C2C595 /* ViewController.swift in Sources */,
+				0B49A47829E562A900C2C595 /* ConiCell.swift in Sources */,
+				0B49A45E29E5477400C2C595 /* HomeController.swift in Sources */,
 				0B49A45A29E5477400C2C595 /* AppDelegate.swift in Sources */,
+				0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */,
 				0B49A45C29E5477400C2C595 /* SceneDelegate.swift in Sources */,
+				0B49A47629E55D9300C2C595 /* Coin.swift in Sources */,
+				0B49A47429E54ED500C2C595 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
