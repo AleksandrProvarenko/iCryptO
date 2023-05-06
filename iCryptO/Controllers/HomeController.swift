@@ -10,7 +10,17 @@ import UIKit
 class HomeController: UIViewController {
     
     // MARK: - Variables
-    private let coins: [Coin] = Coin.getMockArray()
+    private let coins: [Coin] = [
+        Coin(id: 1, name: "Bitcoin",
+             max_supplay: 200, cmc_rank: 1,
+             quote: PricingData(CAD: CAD(price: 50000, market_kap: 1_000_000))),
+        Coin(id: 2, name: "Ethereum",
+             max_supplay: nil, cmc_rank: 2,
+             quote: PricingData(CAD: CAD(price: 2000, market_kap: 500_000))),
+        Coin(id: 3, name: "Monero",
+             max_supplay: nil, cmc_rank: 3,
+             quote: PricingData(CAD: CAD(price: 200, market_kap: 250_000)))
+    ]
     
     // MARK: - UIComponents
     private let tableView: UITableView = {
@@ -46,7 +56,6 @@ class HomeController: UIViewController {
 }
 
 // MARK: - TableViewFunctions
-
 extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return coins.count

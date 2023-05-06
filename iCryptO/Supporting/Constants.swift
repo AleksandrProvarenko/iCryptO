@@ -10,7 +10,6 @@ import Foundation
 struct Constants {
     
     // MARK: - API
-    
     static let sheme = "https"
     static let baseURL = "pro-api.coinmarketcap.com"
     static let fullURL = "https://pro-api.coinmarketcap.com/"

@@ -7,39 +7,27 @@
 
 import Foundation
 
-struct Coin {
-    
+struct CoinArray: Decodable {
+    let data: [Coin]
+}
+
+struct Coin: Decodable {
     let id: Int
     let name: String
-    let max_suplply: Int?
+    let max_supplay: Int?
     let cmc_rank: Int
-    let quote: Quote
+    let quote: PricingData
     
-    var logoURL = URL(string: "https://s2.coinmarketcap.com/static/img/coins/200x200/1.png")
-
-    struct Quote {
-        let CAD: CAD
-        
-        struct CAD {
-            let price: Double
-            let market_kap: Double
-        }
+    var logoURL: URL? {
+        return URL(string: "https://s2.coinmarketcap.com/static/img/coins/200x200/\(id).png")
     }
 }
 
-extension Coin {
-    
-    public static func getMockArray() -> [Coin] {
-        return [
-            Coin(id: 1, name: "Bitcoin",
-                 max_suplply: 200, cmc_rank: 1,
-                 quote: Quote(CAD: Quote.CAD(price: 50000, market_kap: 1_000_000))),
-            Coin(id: 2, name: "Ethereum",
-                 max_suplply: nil, cmc_rank: 2,
-                 quote: Quote(CAD: Quote.CAD(price: 2000, market_kap: 500_000))),
-            Coin(id: 3, name: "Monero",
-                 max_suplply: nil, cmc_rank: 3,
-                 quote: Quote(CAD: Quote.CAD(price: 200, market_kap: 250_000)))
-        ]
-    }
+struct PricingData: Decodable {
+    let CAD: CAD
+}
+
+struct CAD: Decodable {
+    let price: Double
+    let market_kap: Double
 }

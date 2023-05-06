@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0E0A772A059D0D0076C8DD /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E0A762A059D0D0076C8DD /* HTTP.swift */; };
+		0B0E0A7A2A059F780076C8DD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E0A792A059F780076C8DD /* Endpoint.swift */; };
 		0B49A45A29E5477400C2C595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A45929E5477400C2C595 /* AppDelegate.swift */; };
 		0B49A45C29E5477400C2C595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A45B29E5477400C2C595 /* SceneDelegate.swift */; };
 		0B49A45E29E5477400C2C595 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A45D29E5477400C2C595 /* HomeController.swift */; };
@@ -16,10 +18,13 @@
 		0B49A47629E55D9300C2C595 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47529E55D9300C2C595 /* Coin.swift */; };
 		0B49A47829E562A900C2C595 /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47729E562A900C2C595 /* CoinCell.swift */; };
 		0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49A47929E5736000C2C595 /* ViewCryptoController.swift */; };
+		0BBE88B629E800CC00C4211E /* CoinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE88B529E800CC00C4211E /* CoinError.swift */; };
 		0BDF3FF329E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF3FF229E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0E0A762A059D0D0076C8DD /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		0B0E0A792A059F780076C8DD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		0B49A45629E5477400C2C595 /* iCryptO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCryptO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B49A45929E5477400C2C595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B49A45B29E5477400C2C595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		0B49A47529E55D9300C2C595 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		0B49A47729E562A900C2C595 /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		0B49A47929E5736000C2C595 /* ViewCryptoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoController.swift; sourceTree = "<group>"; };
+		0BBE88B529E800CC00C4211E /* CoinError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinError.swift; sourceTree = "<group>"; };
 		0BDF3FF229E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0B49A47529E55D9300C2C595 /* Coin.swift */,
+				0BBE88B529E800CC00C4211E /* CoinError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 		0B49A47229E54DE700C2C595 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0B0E0A762A059D0D0076C8DD /* HTTP.swift */,
+				0B0E0A792A059F780076C8DD /* Endpoint.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -202,8 +211,11 @@
 				0BDF3FF329E5B132008EF7B5 /* ViewCryptoControllerViewModel.swift in Sources */,
 				0B49A45A29E5477400C2C595 /* AppDelegate.swift in Sources */,
 				0B49A47A29E5736000C2C595 /* ViewCryptoController.swift in Sources */,
+				0B0E0A772A059D0D0076C8DD /* HTTP.swift in Sources */,
+				0BBE88B629E800CC00C4211E /* CoinError.swift in Sources */,
 				0B49A45C29E5477400C2C595 /* SceneDelegate.swift in Sources */,
 				0B49A47629E55D9300C2C595 /* Coin.swift in Sources */,
+				0B0E0A7A2A059F780076C8DD /* Endpoint.swift in Sources */,
 				0B49A47429E54ED500C2C595 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

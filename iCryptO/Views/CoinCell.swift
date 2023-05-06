@@ -10,13 +10,11 @@ import UIKit
 class CoinCell: UITableViewCell {
     
     static let identifier = "CoinCell"
-    var onImageLoaded: ((UIImage?)-> Void)?
     
     // MARK: - Variables
     private(set) var coin: Coin!
     
     // MARK: - UIComponets
-    
     private let coinLogo: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit

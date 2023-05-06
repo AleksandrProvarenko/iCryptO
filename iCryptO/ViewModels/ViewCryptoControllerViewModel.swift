@@ -44,8 +44,8 @@ class ViewCryptoControllerViewModel {
     }
     
     var maxSupplyLabel: String {
-        if self.coin.max_suplply != nil {
-            return "Max Supply: \(String(describing: self.coin.max_suplply))"
+        if self.coin.max_supplay != nil {
+            return "Max Supply: \(String(describing: self.coin.max_supplay))"
         } else {
             return "DEBUG"
         }
